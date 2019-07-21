@@ -4740,7 +4740,7 @@ body:not(.device-touch):not(.device-sm):not(.device-xs) .portfolio.portfolio-par
 	opacity: 0;
 	z-index: 2;
 	text-align: center;
-	background-color: rgba(0, 0, 0, .5)
+	background-color: rgba(204, 193, 158, .8);
 }
 
 body:not(.device-touch):not(.device-sm):not(.device-xs) .portfolio-overlay {
@@ -4787,6 +4787,7 @@ body:not(.device-touch):not(.device-sm):not(.device-xs) .portfolio-overlay a {
 	display: block;
 	margin: -20px 0 0 -20px;
 	opacity: 0
+	color: #314963;
 }
 
 .iportfolio:hover a.center-icon,
