@@ -1,19 +1,31 @@
-@font-face {
-  font-family: 'webfont';
-  font-display: swap;
-  src: url('//at.alicdn.com/t/webfont_8kik3nyqz6.eot'); /* IE9*/
-  src: url('//at.alicdn.com/t/webfont_8kik3nyqz6.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-  url('//at.alicdn.com/t/webfont_8kik3nyqz6.woff2') format('woff2'),
-  url('//at.alicdn.com/t/webfont_8kik3nyqz6.woff') format('woff'), /* chrome、firefox */
-  url('//at.alicdn.com/t/webfont_8kik3nyqz6.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
-  url('//at.alicdn.com/t/webfont_8kik3nyqz6.svg#杨任东竹石体-Bold') format('svg'); /* iOS 4.1- */
+
+.play-icon i {
+    width: 70px;
+    height: 70px;
+    line-height: 71px;
+    font-size: 24px;
+    /*background-color: #314963;*/
+    background: linear-gradient(60deg,#1f2e40,#407d7d);
+    color: #fff;
+    text-align: center;
+    border-radius: 50%;
+    padding-left: 4px;
+    box-shadow: 0 5px 10px rgba(0,0,0,.2);
+    transition: transform .3s ease;
+    animation: animdgradient 3s ease alternate infinite;
+    background-size: 300% 300%;
 }
 
-.web-font{
-    font-family:"webfont" !important;
-    font-size:16px;font-style:normal;
+[class^=icon-], [class*=" icon-"], [class^=icon-line-], [class*=" icon-line-"], [class^=icon-line2-], [class*=" icon-line2-"], .side-header #primary-menu ul>li.sub-menu>a:after, .docs-navigation ul ul li.current a:after {
+    display: inline-block;
+    font-family: font-icons;
+    speak: none;
+    font-style: normal;
+    font-weight: 400;
+    font-variant: normal;
+    text-transform: none;
+    line-height: inherit;
     -webkit-font-smoothing: antialiased;
-    -webkit-text-stroke-width: 0.2px;
     -moz-osx-font-smoothing: grayscale;
 }
 
@@ -174,36 +186,68 @@ body.side-panel-left.side-push-panel.side-panel-open.stretched #header .containe
 	font-family: roboto, sans-serif
 }
 
-/*.portfolio-overlay {
-	background-color: rgba(255, 255, 255, .9)
+
+/* Carousel
+-----------------------------------------------------------------*/
+.oc-desc {
+	position: absolute;
+	top: 5%;
+	left: 5%;
+	bottom: 16px;
+	background-color: #FFF;
+	padding: 25px;
+	border-radius: 3px;
+	height: 90%;
+	width: 90%;
+}
+.oc-desc  p {
+	overflow: hidden;
+	display: -webkit-box;
+	-webkit-line-clamp: 5;
+	-webkit-box-orient: vertical;
 }
 
-.portfolio-overlay .portfolio-desc h3 {
-	font-size: 22px;
-	font-weight: 300;
-	text-transform: uppercase;
-	letter-spacing: 2px
+.oc-desc h3 { font-size: 16px; }
+.oc-desc h3 a { color: #111; }
+
+.owl-carousel .owl-item .oc-desc {
+	opacity: 0;
+	transform: scale(0.7);
+	transition: all .3s cubic-bezier(0.4, 0.2, 0.2, 1);
 }
 
-.portfolio-overlay .portfolio-desc h3 a {
-	color: #333!important;
-	text-shadow: none
+/* .owl-carousel .owl-item:hover .oc-desc, */
+.owl-carousel .owl-item.active.center .oc-desc {
+	opacity: 0.95;
+	transform: scale(1);
+	background-color: white;
 }
 
-.portfolio-overlay .portfolio-desc span {
-	margin-top: 12px;
-	text-transform: uppercase;
-	font-size: 14px;
-	letter-spacing: 1px;
-	font-weight: 300
+.world-map-image {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: auto;
+	z-index: 1;
 }
 
-.portfolio-overlay .portfolio-desc span a {
-	color: #999!important;
-	text-shadow: none
-}*/
+.counter-section [class^=col-]:not(:last-child):after {
+	content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 10px;
+	height: 100%;
+	opacity: .4;
+	/*background-image: url('images/divider-2.svg');*/
+	background-repeat: no-repeat;
+	background-position: center center;
+}
 
-
+.device-sm .counter-section [class^=col-]:nth-child(2):after,
+.device-md .counter-section [class^=col-]:nth-child(2):after,
+.device-xs .counter-section [class^=col-]:after  { display: none; }
 
 /*-------------------gallery style---------------------*/
 
@@ -233,7 +277,7 @@ body.side-panel-left.side-push-panel.side-panel-open.stretched #header .containe
 }
 
 .owl-carousel .owl-dots .owl-dot {
-	width: 55px;
+	width: 45px;
 	height: 2px;
 	border-radius: 2px;
 	transition: all .3s ease-out;
@@ -242,18 +286,18 @@ body.side-panel-left.side-push-panel.side-panel-open.stretched #header .containe
 }
 
 .owl-carousel .owl-dots .owl-dot.active {
-	width: 95px;
+	width: 75px;
 	margin-right:10px !important;
 }
 
-.owl-item {
+#section-gallery .owl-item {
 	opacity: 0;
 	transform: translateY(20px);
 	transition: all .4s .1s ease-out;
 	margin-right:10px !important;
 }
 
-.owl-item.active {
+#section-gallery .owl-item.active {
 	opacity: 1;
 	transform: translateY(0);
 	margin-right:10px !important;

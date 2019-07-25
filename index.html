@@ -1,12 +1,22 @@
 <!DOCTYPE html>
 <html dir="ltr" lang="en-US">
    <head>
+
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+      <meta name="keywords" content="百度地图,百度地图API，百度地图自定义工具，百度地图所见即所得工具" />
+      <meta name="description" content="百度地图API自定义地图，帮助用户在可视化操作下生成百度地图" />
+
       <meta http-equiv="content-type" content="text/html; charset=utf-8" />
       <meta name="author" content="SemiColonWeb" />
       <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700%7CRoboto:300,400,500,700" rel="stylesheet" type="text/css" />
       <link href='http://cdn.repository.webfont.com/webfonts/nomal/131900/46596/5d342b72f629d808acad6950.css' rel='stylesheet' type='text/css' />   
-      <link href='http://cdn.repository.webfont.com/webfonts/nomal/131900/46724/5d341949f629d808acad6940.css' rel='stylesheet' type='text/css' />
-      <link href='http://cdn.repository.webfont.com/webfonts/nomal/131900/46134/5d34199cf629d808acad6942.css' rel='stylesheet' type='text/css' />
+
+      <style type="text/css">
+          html,body{margin:0;padding:0;}
+          .iw_poi_title {color:#CC5522;font-size:14px;font-weight:bold;overflow:hidden;padding-right:13px;white-space:nowrap}
+          .iw_poi_content {font:12px arial,sans-serif;overflow:visible;padding-top:4px;white-space:-moz-pre-wrap;word-wrap:break-word}
+      </style>
+      <script type="text/javascript" src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script>
 
       <link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
       <link rel="stylesheet" href="css/style.css" type="text/css" />
@@ -19,27 +29,10 @@
       <link rel="stylesheet" href="css/fonts.css" type="text/css" />
       <link rel="stylesheet" href="css/responsive.css" type="text/css" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
-      <title>One Page Module | Canvas</title>
+      <title>信德多元文化</title>
    </head>
    <body class="stretched side-push-panel overlay-menu">
-      <!-- <div id="side-panel" class="dark">
-         <div id="side-panel-trigger-close" class="side-panel-trigger"><a href="index.html#"><i class="icon-line-cross"></i></a></div>
-         <div class="side-panel-wrap">
-            <div class="widget widget_links clearfix">
-               <h4>About Canvas</h4>
-               <div style="font-size: 14px; line-height: 1.7;">
-                  <address style="line-height: 1.7;">
-                     795 Folsom Ave, Suite 600<br>
-                     San Francisco, CA 94107<br>
-                  </address>
-                  <div class="clear topmargin-sm"></div>
-                  <abbr title="Phone Number">Phone:</abbr> (91) 8547 632521<br>
-                  <abbr title="Fax">Fax:</abbr> (91) 11 4752 1433<br>
-                  <abbr title="Email Address">Email:</abbr> <a href="cdn-cgi/l/email-protection.html" class="__cf_email__" data-cfemail="b5dcdbd3daf5d6d4dbc3d4c69bd6dad8">[email&#160;protected]</a>
-               </div>
-            </div>
-         </div>
-      </div> -->
+
       <div id="wrapper" class="clearfix">
          <header id="header" class="full-header transparent-header static-sticky">
             <div id="header-wrap">
@@ -102,11 +95,15 @@
                      </div>
                   </div>
                   <div class="video-wrap">
-                     <video id="slide-video" preload="auto" loop muted autoplay>
-                        <source src='videos/test3.mp4' type='video/mp4' />
+                     <video id="slide-video" controls loop muted autoplay>
+                        <source src='videos/2.mp4' type='video/mp4' />
+                        <source src='videos/3.mp4' type='video/mp4' />
+                        <source src='videos/4.mp4' type='video/mp4' />
+                        <source src='videos/5.mp4' type='video/mp4' />
+                        <source src='videos/1.mp4' type='video/mp4' />
                      </video>
-                     <div class="video-overlay" style="background-color: rgba(0,0,0,0.1);"></div>
-                  </div>
+<!--                      <div class="video-overlay" style="background-color: rgba(0,0,0,0.1);"></div>
+ -->                  </div>
                   <a href="index.html#" data-scrollto="#section-about" data-easing="easeInOutExpo" data-speed="1250" data-offset="65" class="one-page-arrow dark"><i class="icon-angle-down infinite animated fadeInDown"></i></a>
                </div>
             </div>
@@ -128,7 +125,13 @@
 					         <img src="images/dashige.jpg" alt="">
 					      </div>
 					      <div class="section-product-content edge-underline " data-bottom-top="bottom: 0px;" data-top-bottom="bottom: 100px;">
-					         <h3 class="css1ab8f2fda22033c" style=" color: #314963;">大士閣</h3>
+
+
+<!--                   <div class="container bottommargin clearfix" style="margin-top: -30px;">
+                    <img src = "images/title_bg.jpg">
+                    <h3 class="css1ab8f2fda22033c" style=" color: #314963;">大士閣</h3>
+                  </div> -->
+                   <h3 class="css1ab8f2fda22033c" style=" color: #314963;">大士閣</h3>
 					         <p style="letter-spacing: 2px; text-align: left;">佛山古刹大士閣，是著名的觀世音菩薩道場，始建于明朝萬曆三十三年（1605年）。2008年，為令釋迦正法久住，重現佛教真實的教育意義，在各級政府部門和各方人士關懷指導下，上印下信法師主持恢復重建雞足山大士閣。大士閣為男眾道場，秉承本師釋迦如來的教法教義，培養弘護人才，解行並進，專修專弘淨土法門。志在成為一所清淨莊嚴，落實佛教教育的寶刹，為佛教事業的發展增光添彩。</p>
 					         <div class="row justify-content-center clearfix">
 					            <div class="col-6 align-items-center">
@@ -251,9 +254,8 @@
 
 <!-- -----------------------------------------------------wechat-------------------------------------------------------- -->
                <div id="section-blog" class="page-section">
-                  <div class="entry-image nobottommargin" style="margin: auto;">
-                     <a href="index.html#"><img src="images/newsbanner.png" alt="banner"></a>
-                  </div>
+                  <div class="img-fluid max-width: 100% height:auto" >
+                     <img src="images/newsbanner.png" alt="banner">
                   <div class="section nobottommargin">
                      <div id="wechat" class="container clearfix">
 
@@ -294,7 +296,7 @@
                                  <img src="images/wechat/4.jpg" alt="Open Imagination">
                                  </a>
                                  <div class="portfolio-overlay">
-                                    <a href="https://mp.weixin.qq.com/s/W9v9zF--sUpziopAsyH3Vw" class="center-icon"><i class="icon-line-ellipsis"></i></a>
+                                    <a href="https://mp.weixin.qq.com/s/pcsIvHiD2ZjtHYU1nTz-BA" class="center-icon"><i class="icon-line-ellipsis"></i></a>
                                  </div>
                               </div>
                            </article>
@@ -343,21 +345,76 @@
                      </div>              
                   </div>
 
+                </div>
+
 <!-- ------------------------------------------------------------------------道場共修---------------------------------------------------------------------------- -->
+
+
+
+
+
+
                   <div id="section-practise" class="sectoin dark justify-content-center" style= " margin-left:0; margin-right: 0; width: 100%; text-align: center; padding-top: 5%; padding-bottom: 3%; background-color: #314963;">
                         <h2 class="divcenter bottommargin font-body" style="letter-spacing:5px; color: #e0d8c1"> 一門深入 長時薰修<br>清淨道場 依眾靠眾</h2>
                         <p class="lead divcenter bottommargin" style=" color: #e0d8c1;font-weight:300; padding-left: 20%; padding-right: 20%;">護國息災，地鐘佛七法會長興，至心念佛，西歸直指極樂故鄉；于山寺中清淨身心，在共修中親嘗法喜，吾輩淨宗學人，當具真信切愿，老實念佛，句句攝耳諦聽，步步蓮花始開，正如《大勢至菩薩圓通章》言：忆佛念佛，现前当来，必定见佛。</p>
                   </div>       
 
   
-                  <div class="section parallax nomargin dark" style="background-image: url('images/practise.jpg'); padding: 100px 0;  padding: 150px 0;" data-bottom-top="background-position:0px 0px;" data-top-bottom="background-position:0px -300px;">
+                  <div class="section parallax nomargin dark" style="background-image: url('images/gongxiu.jpg'); padding-top: 100px;" data-bottom-top="background-position:0px 300px;" data-top-bottom="background-position:0px -300px;">
 
                      <div class="text-center">
                         <img src="images/gongxiu.png" class="rounded" alt="banner">
                      </div>
                   </div>
 
-                <div class="justify-content-center container clearfix"  style=" padding-top: 4%; margin: auto;  max-width: 100%;">
+<!------- test ------->
+               <div class="section m-0" style="background: url('images/practise.jpg') no-repeat center center; background-size: cover; padding: 100px 0;">
+                  <div class="container">
+                     <div class="row justify-content-between align-items-center">
+                        <div class="col-md-4">
+                           <div class="heading-block nobottomborder bottommargin-sm">
+                              <div class="badge badge-pill badge-default">Careers</div>
+                              <h3 class="nott ls0">Get your free Quote today</h3>
+                           </div>
+                           <p>護國息災，地鐘佛七法會長興，至心念佛，西歸直指極樂故鄉；于山寺中清淨身心，在共修中親嘗法喜，吾輩淨宗學人，當具真信切愿，老實念佛，句句攝耳諦聽，步步蓮花始開，正如《大勢至菩薩圓通章》言：忆佛念佛，现前当来，必定见佛。</p>
+                        </div>
+                        <div class="col-lg-3 col-md-4">
+                           <div class="card shadow-sm">
+                              <div class="card-body">
+                                 <h4 class="mb-3">Apply Now</h4>
+                                 <div class="form-widget">
+                                    <div class="form-result"></div>
+                                    <form class="nobottommargin" id="template-contactform" name="template-contactform" action="include/form.php" method="post">
+                                       <div class="col_full mb-3">
+                                          <label for="template-contactform-name">Name:*</label>
+                                          <input type="text" id="template-contactform-name" name="template-contactform-name" class="form-control input-sm required" value="">
+                                       </div>
+                                       <div class="col_full mb-3">
+                                          <label for="template-contactform-email">Email Address:*</label>
+                                          <input type="email" id="template-contactform-email" name="template-contactform-email" class="form-control input-sm required" value="">
+                                       </div>
+                                       <div class="col_full mb-4">
+                                          <label for="template-contactform-website">Website:*</label>
+                                          <input type="text" id="template-contactform-website" name="template-contactform-website" class="form-control input-sm required" value="">
+                                       </div>
+                                       <div class="col_full nobottommargin">
+                                          <button class="button button-rounded btn-block nott ls0 m-0" type="submit" id="template-contactform-submit" name="template-contactform-submit" value="submit">Apply Now</button>
+                                       </div>
+                                       <input type="hidden" name="prefix" value="template-contactform-">
+                                    </form>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-md-4 mt-5 mt-md-0 center">
+                           <a href="http://player.youku.com/embed/XNDI4MTI4OTQwMA==" data-lightbox="iframe" class="play-icon shadow"><i class="icon-play"></i></a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+<!-- test end -->
+
+<!--                 <div class="justify-content-center container clearfix"  style=" padding-top: 4%; margin: auto;  max-width: 100%;">
                   <div class="row">
                      <div class="col-lg-7" style="padding: 2%">
                         <div class="embed-responsive embed-responsive-16by9">
@@ -406,140 +463,111 @@
                         </div>
                      </div>
                   </div>
-               </div>
+               </div> -->
 
 
 
 <!-- ----------------------------------------------------------------素食------------------------------------------------------------- -->
-                  <div id="section-vegan" class="sectoin dark justify-content-center" style= " margin-left:0; margin-right: 0; width: 100%; text-align: center; padding-top: 5%; padding-bottom: 3%; background-color:#f5eedc;">
+                  <div class="sectoin dark justify-content-center" style= "margin-left:0; margin-right: 0; width: 100%; text-align: center; padding-top: 5%; padding-bottom: 3%; background-color:#f9f6ef;">
                         <h2 class="divcenter bottommargin font-body" style="letter-spacing:5px; color: #314963">甘之若素 安之若素</h2>
                         <p class="lead divcenter bottommargin" style=" color: #314963;font-weight:300; padding-left: 20%; padding-right: 20%;">贤首菩萨曾说：“柔和质直摄生德。”只有慈悲平等，质直无伪的人，才能摄化众生进入正法。付出，自己能獲得清淨快樂，凡是有緣人，也同樣能感受那一份歡喜。天地同根，萬物一體。人為三才之一，本應尊重天地萬物，如同對待自己，用物我一體之心，善待生靈，進而帶領萬物回歸安寧幸福。</p>
                   </div>       
 
   
-                  <div class="section parallax nomargin dark" style="background-image: url('images/food_bg.gif'); padding: 100px 0;  background-size: cover;" data-bottom-top="background-position:0px 0px;" data-top-bottom="background-position:0px -300px;">
-
+                  <div class="section parallax nomargin dark" style="background-image: url('images/vegan/bg1.jpg'); padding: 100px 0;  background-size: cover;" data-bottom-top="background-position:0px 0px;" data-top-bottom="background-position:0px -300px;">
                      <div class="text-center">
                         <img src="images/gongxiu.png" class="rounded" alt="banner">
                      </div>
                   </div>
+                  <div id="section-vegan" class = "container">
+                      <div class="section nobg mt-0 mb-4">
+                          <div class="container clearfix">
+                              <div class="row justify-content-center" style="margin-top: 100px">
+                                  <div class="col-md-7 center">
+                                      <div class="heading-block nobottomborder mb-4">
+                                          <h2 class="mb-4 nott">以愛為食</h2>
+                                      </div>
+                                      <p>宇宙間的萬事萬物，都仰仗著滋養，才能生存並散發出蓬勃生機，而我們所依賴的除了物質，更加必不可少的是「愛」，無私的大愛，讓我們看清眾生本為一體，無差無別，眾生生命同等可貴。放下我們一念口腹私欲，通往戒殺護生、棄肉茹素，通往身心清淨，和諧美滿的快樂之道。</p>
+                                      <div class="bottommargin-sm clearfix" style=" max-width: 300px; margin: auto;margin-top: 50px;">
+                                          <img src="images/vegan_sub.png" alt="img divider">
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
 
-                  <div id="section-blog" class="page-section">
-                    <div class="section nobottommargin">
-                     <div id="wechat" class="container clearfix">
-
-                        <div id="portfolio" class="portfolio grid-container portfolio-nomargin clearfix">
-                          <!-- 父親節 -->
-                           <article class="portfolio-item pf-media pf-icons" >
-                              <div class="portfolio-image">
-                                 <img src="images/wechat/1.jpg" alt="Open Imagination">
-                                 </a>
-                                 <div class="portfolio-overlay">
-                                    <a href="https://mp.weixin.qq.com/s/ICI3lAzT0rTfUCpbgu8Mvg" class="center-icon"><i class="icon-line-ellipsis"></i></a>
-                                 </div>
+                          <div class="justify-content-center owl-carousel owl-carousel-full image-carousel carousel-widget topmargin-sm" data-stage-padding="20" data-margin="10" data-center="true" data-loop="true" data-nav="true" data-autoplay="500000" data-speed="400" data-pagi="true" data-items-xs="1" data-items-sm="2" data-items-md="2" data-items-lg="3" data-items-xl="4">
+                              <div class="oc-item center">
+                                  <img src="images/vegan/1.jpg" alt="Image 1" class="rounded">
+                                  <div class="oc-desc d-flex flex-column justify-content-center shadow-lg">
+                                      <img src="images/vegan/food_catg1.png" alt="Image 1" class="rounded" style="height: 120px; width: 120px; opacity: 1; margin: auto; margin-top: 0; margin-bottom: 50px;">
+                                      <p class="mb-4 text-black-60" style="text-align: left;">涼菜又稱之為小菜，在會客聚餐時，是最先呈現在餐桌的菜點，當然也是居家用餐前的開胃小鮮。在主菜之前先上小菜，就好像人情調劑一般，先從清淡再漸漸濃厚，這便是中國飲食所蘊含之大道。</p>
+                                      <a href="#" class="button button-rounded button-border nott ls0 t500 m-0 d-flex" style="align-self: center;">瞭解更多</a>
+                                  </div>
                               </div>
-                           </article>
-                           <!-- 疊衣服 -->
-                           <article class="portfolio-item pf-media pf-icons" >
-                              <div class="portfolio-image">
-                                 <img src="images/wechat/2.jpg" alt="Open Imagination">
-                                 </a>
-                                 <div class="portfolio-overlay">
-                                    <a href="https://mp.weixin.qq.com/s/rX-i8L-6oFoM3YQ_VW9fnQ" class="center-icon"><i class="icon-line-ellipsis"></i></a>
-                                 </div>
+                              <div class="oc-item tleft">
+                                  <img src="images/vegan/2.jpg" alt="Image 1" class="rounded">
+                                  <div class="oc-desc d-flex flex-column justify-content-center shadow-lg">
+                                      <img src="images/vegan/food_catg1.png" alt="Image 1" class="rounded" style="height: 120px; width: 120px; opacity: 1; margin: auto; margin-top: 0; margin-bottom: 50px;">
+                                      <p class="mb-4 text-black-60" style="text-align: left;">熱菜被稱為主菜，是每天都不可缺少的主菜。尤其在迎客招待時，總要展示出幾道拿手好菜，讓親朋好友們嘗嘗鮮。熱菜除了地域風俗的不同而有差異之外，即便是鄰里門廊之間，每天也都會傳出不同的味道。然而每一種味道的背後，必然也蘊含著每家庭世代相傳的家道在其中。</p>
+                                      <a href="#" class="button button-rounded button-border nott ls0 t500 m-0 d-flex" style="align-self: center;">瞭解更多</a>
+                                  </div>
                               </div>
-                           </article>
-                           <!-- 母親節 -->
-                           <article class="portfolio-item pf-media pf-icons" >
-                              <div class="portfolio-image">
-                                 <img src="images/wechat/3.jpg" alt="Open Imagination">
-                                 </a>
-                                 <div class="portfolio-overlay">
-                                    <a href="https://mp.weixin.qq.com/s/kZYkl247g-eCJDqVUMOi5g" class="center-icon"><i class="icon-line-ellipsis"></i></a>
-                                 </div>
+                              <div class="oc-item tleft">
+                                  <img src="images/vegan/3.jpg" alt="Image 1" class="rounded">
+                                  <div class="oc-desc d-flex flex-column justify-content-center shadow-lg">
+                                      <img src="images/vegan/food_catg1.png" alt="Image 1" class="rounded" style="height: 120px; width: 120px; opacity: 1; margin: auto; margin-top: 0; margin-bottom: 50px;">
+                                      <p class="mb-4 text-black-60" style="text-align: left;">從人類最初發現水與火的結合，便有了“湯”的誕生。穿越過數千年的今天，各式的湯品，已融入百家餐桌，四菜之中必少不了一湯。飯前飯後一碗湯，已是我們久而不變的習慣。湯的做法，并不在於它的層出不窮，而在於一家人親情的團聚，讓美味傳遞著幸福感，讓這種溫暖永遠保留在歲月的記憶當中，直到永遠。</p>
+                                      <a href="#" class="button button-rounded button-border nott ls0 t500 m-0 d-flex" style="align-self: center;">瞭解更多</a>
+                                  </div>
                               </div>
-                           </article>
-                           <!-- 問答 -->
-                           <article class="portfolio-item pf-media pf-icons" >
-                              <div class="portfolio-image">
-                                 <img src="images/wechat/4.jpg" alt="Open Imagination">
-                                 </a>
-                                 <div class="portfolio-overlay">
-                                    <a href="https://mp.weixin.qq.com/s/W9v9zF--sUpziopAsyH3Vw" class="center-icon"><i class="icon-line-ellipsis"></i></a>
-                                 </div>
+                              <div class="oc-item tleft">
+                                  <img src="images/vegan/4.jpg" alt="Image 1" class="rounded">
+                                  <div class="oc-desc d-flex flex-column justify-content-center shadow-lg">
+                                      <img src="images/vegan/food_catg1.png" alt="Image 1" class="rounded" style="height: 120px; width: 120px; opacity: 1; margin: auto; margin-top: 0; margin-bottom: 50px;">
+                                      <p class="mb-4 text-black-60" style="text-align: left;">美味小吃，日日都吃不膩，不是因為餓，也不是爲了解饞！吾國為餐飲大國，食之有道，飲食流變，實為文化傳承，一代一代傳下來，小吃也有其獨特的秘方、手藝，食風者，土風也，我們在品嘗之餘，可以自己動手嘗試一下，做過方知其中真正的味道。</p>
+                                      <a href="#" class="button button-rounded button-border nott ls0 t500 m-0 d-flex" style="align-self: center;">瞭解更多</a>
+                                  </div>
                               </div>
-                           </article>
-                           <!-- 冬至 -->
-                           <article class="portfolio-item pf-media pf-icons" >
-                              <div class="portfolio-image">
-                                 <img src="images/wechat/5.jpg" alt="Open Imagination">
-                                 </a>
-                                 <div class="portfolio-overlay">
-                                    <a href="https://mp.weixin.qq.com/s/dJfj-MTsTI0fxY5gagg6sQ" class="center-icon"><i class="icon-line-ellipsis"></i></a>
-                                 </div>
+                              <div class="oc-item tleft">
+                                  <img src="images/vegan/5.jpg" alt="Image 1" class="rounded">
+                                  <div class="oc-desc d-flex flex-column justify-content-center shadow-lg">
+                                      <img src="images/vegan/food_catg1.png" alt="Image 1" class="rounded" style="height: 120px; width: 120px; opacity: 1; margin: auto; margin-top: 0; margin-bottom: 50px;">
+                                      <p class="mb-4 text-black-60" style="text-align: left;">“昔有神農授農耕，又有後稷播五種”，至如今長江、黃河更是劃分出了中國獨道的主食格局“南米北面”，已是成為千古不變的風俗，在不變中，更滋養了飲食藝術的升華。無論是米飯的文化、粥的工藝，還是面的花樣，無一不是在今天的餐桌上為人們展現身姿。</p>
+                                      <a href="#" class="button button-rounded button-border nott ls0 t500 m-0 d-flex" style="align-self: center;">瞭解更多</a>
+                                  </div>
                               </div>
-                           </article>
-                           <!-- 常禮 -->
-                           <article class="portfolio-item pf-media pf-icons" >
-                              <div class="portfolio-image">
-                                 <img src="images/wechat/6.jpg" alt="Open Imagination">
-                                 </a>
-                                 <div class="portfolio-overlay">
-                                    <a href="https://mp.weixin.qq.com/s/sv_gQK7yewi2MMBv7RQg3w" class="center-icon"><i class="icon-line-ellipsis"></i></a>
-                                 </div>
-                              </div>
-                           </article>
-                           <!-- 人這一生如是我聞 -->
-                           <article class="portfolio-item pf-media pf-icons" >
-                              <div class="portfolio-image">
-                                 <img src="images/wechat/7.jpg" alt="Open Imagination">
-                                 </a>
-                                 <div class="portfolio-overlay">
-                                    <a href="https://mp.weixin.qq.com/s/MQlTdKSM7QEnLPw5nhumCA" class="center-icon"><i class="icon-line-ellipsis"></i></a>
-                                 </div>
-                              </div>
-                           </article>
-                           <!-- 大悲心開 -->
-                           <article class="portfolio-item pf-media pf-icons" >
-                              <div class="portfolio-image">
-                                 <img src="images/wechat/8.jpg" alt="Open Imagination">
-                                 </a>
-                                 <div class="portfolio-overlay">
-                                    <a href="https://mp.weixin.qq.com/s/57x_je-6JvouyKHt7KO7fA" class="center-icon"><i class="icon-line-ellipsis"></i></a>
-                                 </div>
-                              </div>
-                           </article>
-                        </div>
-
-                     </div>              
+                          </div>
+                      </div>                    
+                  </div>
+                   
+            
 
                  <!-- suspected div -->
-               </div>
 
                <div id="section-contact" class="page-section notoppadding">
                   <div class="row noleftmargin norightmargin bottommargin-lg align-items-stretch">
-                     <div id="headquarters-map" class="col-lg-8 col-md-6 gmap d-none d-md-block"></div>
+                     <div id="dituContent" class="col-lg-8 col-md-6 gmap d-none d-md-block">
+                        <!-- <div style="width:1000px;height:550px;border:#ccc solid 1px;" id="dituContent"></div> -->
+                     </div>
                      <div class="col-lg-4 col-md-6" style="background-color: #F5F5F5;">
                         <div class="col-padding">
-                           <h3 class="font-body t400 ls1">Our Headquarters</h3>
-                           <div style="font-size: 16px; line-height: 1.7;">
-                              <address style="line-height: 1.7;">
-                                 <strong>North America:</strong><br>
-                                 795 Folsom Ave, Suite 600<br>
-                                 San Francisco, CA 94107<br>
-                              </address>
-                              <div class="clear topmargin-sm"></div>
-                              <address style="line-height: 1.7;">
-                                 <strong>Europe:</strong><br>
-                                 795 Folsom Ave, Suite 600<br>
-                                 San Francisco, CA 94107<br>
-                              </address>
-                              <div class="clear topmargin"></div>
-                              <abbr title="Phone Number"><strong>Phone:</strong></abbr> (91) 8547 632521<br>
-                              <abbr title="Fax"><strong>Fax:</strong></abbr> (91) 11 4752 1433<br>
-                              <abbr title="Email Address"><strong>Email:</strong></abbr> <a href="cdn-cgi/l/email-protection.html" class="__cf_email__" data-cfemail="7c15121a133c1f1d120a1d0f521f1311">[email&#160;protected]</a>
+                           <h3 class="font-body t500 ls1">聯系我們</h3>
+                           <div style="font-size: 16px;">
+                              <p>地址：雲南省大理州賓川縣雞足山鎮大士閣報恩寺</p>
+                              <p>電話：67817932</p>
+                              <p>電話Email：amtf@xindedu.org</p>
+                              <p>微信：xindedu</p>
+                              <div class="row" style="margin-left: 0.2%">
+                                <div  class="col-half" style="padding: 2%">
+                                  <img src="images/xinde_qr.jpg" alt="微信號" style="max-width: 100px;">
+                                </div>
+                                <div  class="col-half" style="padding: 2%">
+                                  <img src="images/xinde_qr.jpg" alt="微信號" style="max-width: 100px;">
+                                </div>
+                              </div>
                            </div>
                         </div>
+
                      </div>
                   </div>
                </div>
@@ -551,14 +579,13 @@
                   <div class="row divcenter clearfix">
                      <div class="col-lg-4">
                         <div class="widget clearfix">
-                           <h4>Site Links</h4>
+                           <h4>網站導圖</h4>
                            <ul class="list-unstyled footer-site-links nobottommargin">
-                              <li><a href="index.html#" data-scrollto="#wrapper" data-easing="easeInOutExpo" data-speed="1250" data-offset="70">Top</a></li>
-                              <li><a href="index.html#" data-scrollto="#section-about" data-easing="easeInOutExpo" data-speed="1250" data-offset="70">About</a></li>
-                              <li><a href="index.html#" data-scrollto="#section-works" data-easing="easeInOutExpo" data-speed="1250" data-offset="70">Works</a></li>
-                              <li><a href="index.html#" data-scrollto="#section-services" data-easing="easeInOutExpo" data-speed="1250" data-offset="70">Services</a></li>
-                              <li><a href="index.html#" data-scrollto="#section-blog" data-easing="easeInOutExpo" data-speed="1250" data-offset="70">Blog</a></li>
-                              <li><a href="index.html#" data-scrollto="#section-contact" data-easing="easeInOutExpo" data-speed="1250" data-offset="70">Contact</a></li>
+                              <li><a href="index.html#" data-scrollto="#wrapper" data-easing="easeInOutExpo" data-speed="1250" data-offset="70">置頂</a></li>
+                              <li><a href="index.html#" data-scrollto="#section-about" data-easing="easeInOutExpo" data-speed="1250" data-offset="70">關於</a></li>
+                              <li><a href="index.html#" data-scrollto="#section-works" data-easing="easeInOutExpo" data-speed="1250" data-offset="70">動態</a></li>
+                              <li><a href="index.html#" data-scrollto="#section-vegan" data-easing="easeInOutExpo" data-speed="1250" data-offset="70">素食</a></li>
+                              <li><a href="index.html#" data-scrollto="#section-contact" data-easing="easeInOutExpo" data-speed="1250" data-offset="70">聯繫</a></li>
                            </ul>
                         </div>
                      </div>
@@ -607,12 +634,13 @@
          </footer>
       </div>
       <div id="gotoTop" class="icon-angle-up"></div>
-      <script data-cfasync="false" src="cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="js/jquery.js"></script>
+      <!-- <script data-cfasync="false" src="cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script> -->
+      <script src="js/jquery.js"></script>
       <script src="js/plugins.js"></script>
-      <script src="https://maps.google.com/maps/api/js?key=AIzaSyCzkxzbEni5vR_Ugt1De8gBzrLX3236bnA"></script>
-      <script src="js/jquery.gmap.js"></script>
+      <!-- <script src="https://maps.google.com/maps/api/js?key=AIzaSyCzkxzbEni5vR_Ugt1De8gBzrLX3236bnA"></script> -->
+      <!-- <script src="js/jquery.gmap.js"></script> -->
       <script src="js/functions.js"></script>
-      <script>
+     <!--  <script>
          jQuery(window).on( 'load', function(){
          
          	// Google Map
@@ -645,6 +673,56 @@
          
          });
          
-      </script>
+      </script> -->
    </body>
+
+
+   <script type="text/javascript">
+        //创建和初始化地图函数：
+        function initMap(){
+            createMap();//创建地图
+            setMapEvent();//设置地图事件
+            addMapControl();//向地图添加控件
+            addMarker();//向地图中添加marker
+
+        }
+        
+        //创建地图函数：
+        function createMap(){
+            var map = new BMap.Map("dituContent");//在百度地图容器中创建一个地图
+
+            var npointJ = 100.401711;
+            var npointW = 25.958222;
+            var point = new BMap.Point(npointJ, npointW);//定义一个中心点坐标
+            map.centerAndZoom(point,15);//设定地图的中心点和坐标并将地图显示在地图容器中
+            window.map = map;//将map变量存储在全局
+
+            var marker = new BMap.Marker(point);        // 创建标注    
+            map.addOverlay(marker);                     // 将标注添加到地图中
+        }
+        
+        //地图事件设置函数：
+        function setMapEvent(){
+            map.enableDragging();//启用地图拖拽事件，默认启用(可不写)
+            map.enableScrollWheelZoom();//启用地图滚轮放大缩小
+            map.enableDoubleClickZoom();//启用鼠标双击放大，默认启用(可不写)
+            map.enableKeyboard();//启用键盘上下左右键移动地图
+        }
+        
+        //地图控件添加函数：
+        function addMapControl(){
+            //向地图中添加缩放控件
+        var ctrl_nav = new BMap.NavigationControl({anchor:BMAP_ANCHOR_TOP_LEFT,type:BMAP_NAVIGATION_CONTROL_LARGE});
+        map.addControl(ctrl_nav);
+              //向地图中添加缩略图控件
+        var ctrl_ove = new BMap.OverviewMapControl({anchor:BMAP_ANCHOR_BOTTOM_RIGHT,isOpen:0});
+        map.addControl(ctrl_ove);
+              //向地图中添加比例尺控件
+        var ctrl_sca = new BMap.ScaleControl({anchor:BMAP_ANCHOR_BOTTOM_LEFT});
+        map.addControl(ctrl_sca);
+        }
+        
+        
+        initMap();//创建和初始化地图
+    </script>
 </html>
