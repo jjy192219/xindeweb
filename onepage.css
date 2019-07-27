@@ -372,13 +372,13 @@ body.side-panel-left.side-push-panel.side-panel-open.stretched #header .containe
 }
 
 .button.button-border.button-light {
-	border-color: #f9f9f9;
-	color: #f9f9f9
+	border-color: #ddd6c3;
+	color: #ddd6c3
 }
 
 .button.button-border.button-light:hover {
-	background-color: #f9f9f9;
-	color: #333;
+	background-color: #ddd6c3;
+	color: #314963;
 	text-shadow: none
 }
 
